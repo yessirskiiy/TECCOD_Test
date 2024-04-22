@@ -3,11 +3,7 @@ from math import sqrt
 
 
 def unique_numbers(value: List[int]) -> list:
-    res = []
-    for i in value:
-        if i not in res:
-            res.append(i)
-    return res
+    return list(set(value))
 
 
 def is_prime(number: int) -> bool:
